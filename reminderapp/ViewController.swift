@@ -9,6 +9,12 @@
 import UserNotifications
 import UIKit
 
+struct reminderapp {
+    let title: String
+    let date: Date
+    let identifier: String
+}
+
 class ViewController: UIViewController {
 
     @IBOutlet var table: UITableView!
@@ -17,8 +23,8 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        table.delegate = self as! UITableViewDelegate //as? UITableViewDelegate
-        table.dataSource = self as! UITableViewDataSource  //before: table.dataSource = self
+        table.delegate = self as UITableViewDelegate //as? UITableViewDelegate
+        table.dataSource = self as UITableViewDataSource  //before: table.dataSource = self
     }
 
     @IBAction func didTapAdd() {
@@ -27,8 +33,6 @@ class ViewController: UIViewController {
             return
         }
 
-        vc.title = "Don't forget to stay hydrated!"
-        vc.navigationItem.largeTitleDisplayMode = .never
         vc.completion = { title, body, date in
             DispatchQueue.main.async {
                 self.navigationController?.popToRootViewController(animated: true)
@@ -57,37 +61,8 @@ class ViewController: UIViewController {
         navigationController?.pushViewController(vc, animated: true)
 
     }
-    //-------------------------------------------------------------------------------
-    @IBAction func didTapLog() {
-    // show add vc
-    guard let vc = storyboard?.instantiateViewController(identifier: "log") as? MemoViewController else {
-        return
-    }
-        vc.title = "notes!"
-               vc.navigationItem.largeTitleDisplayMode = .never
-        
-        func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-              tableView.deselectRow(at: indexPath, animated: true)
-
-              let model = models[indexPath.row]
-
-              // Show note controller
-              guard let vc = storyboard?.instantiateViewController(identifier: "log") as? MemoViewController else {
-                  return
-              }
-              vc.navigationItem.largeTitleDisplayMode = .never
-              vc.title = "Note"
-              vc.noteTitle = model.title
-           //   vc.note = model.note
-              navigationController?.pushViewController(vc, animated: true)
-          }
-
-
-     
-
-//-------------------------------------------------------------------------------
-}//added this after adding memo part
-}//added this after adding memo part
+}
+//added this after adding memo part
 extension ViewController: UITableViewDelegate {
 
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
@@ -122,12 +97,3 @@ extension ViewController: UITableViewDataSource {
     }
 
 }
-
-
-struct reminderapp {
-    let title: String
-    let date: Date
-    let identifier: String
-}
-
-

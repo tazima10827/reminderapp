@@ -15,7 +15,7 @@
 		E911AC5625AC416900FEFC5C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E911AC5425AC416900FEFC5C /* LaunchScreen.storyboard */; };
 		E911AC6125AC416900FEFC5C /* reminderappTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E911AC6025AC416900FEFC5C /* reminderappTests.swift */; };
 		E911AC9E25AD4FA300FEFC5C /* AddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E911AC9D25AD4FA300FEFC5C /* AddViewController.swift */; };
-		E911ACD625AD608000FEFC5C /* EntryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E911ACD525AD608000FEFC5C /* EntryViewController.swift */; };
+		E911ACD625AD608000FEFC5C /* AddMemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E911ACD525AD608000FEFC5C /* AddMemoViewController.swift */; };
 		E911ACD825AD63A300FEFC5C /* MemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E911ACD725AD63A300FEFC5C /* MemoViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -42,7 +42,7 @@
 		E911AC6025AC416900FEFC5C /* reminderappTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = reminderappTests.swift; sourceTree = "<group>"; };
 		E911AC6225AC416900FEFC5C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E911AC9D25AD4FA300FEFC5C /* AddViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddViewController.swift; sourceTree = "<group>"; };
-		E911ACD525AD608000FEFC5C /* EntryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryViewController.swift; sourceTree = "<group>"; };
+		E911ACD525AD608000FEFC5C /* AddMemoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddMemoViewController.swift; sourceTree = "<group>"; };
 		E911ACD725AD63A300FEFC5C /* MemoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -92,7 +92,7 @@
 				E911AC5225AC416900FEFC5C /* Assets.xcassets */,
 				E911AC9D25AD4FA300FEFC5C /* AddViewController.swift */,
 				E911ACD725AD63A300FEFC5C /* MemoViewController.swift */,
-				E911ACD525AD608000FEFC5C /* EntryViewController.swift */,
+				E911ACD525AD608000FEFC5C /* AddMemoViewController.swift */,
 				E911AC5425AC416900FEFC5C /* LaunchScreen.storyboard */,
 				E911AC5725AC416900FEFC5C /* Info.plist */,
 			);
@@ -210,7 +210,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E911AC4E25AC416800FEFC5C /* ViewController.swift in Sources */,
-				E911ACD625AD608000FEFC5C /* EntryViewController.swift in Sources */,
+				E911ACD625AD608000FEFC5C /* AddMemoViewController.swift in Sources */,
 				E911ACD825AD63A300FEFC5C /* MemoViewController.swift in Sources */,
 				E911AC4A25AC416800FEFC5C /* AppDelegate.swift in Sources */,
 				E911AC9E25AD4FA300FEFC5C /* AddViewController.swift in Sources */,
